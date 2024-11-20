@@ -17,6 +17,7 @@ class DoctrineListener
 
     public function postPersist(PostPersistEventArgs $args): void
     {
+        /** @var UpdatedEntity $entity */
         $entity = $args->getObject();
 
         $this->eventDispatcher->dispatch(new UpdatedEntity($entity->getId(), $entity::class));
