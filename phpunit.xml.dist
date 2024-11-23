@@ -8,6 +8,12 @@
         <server name="KERNEL_CLASS" value="Fico7489\PersistenceBundle\Tests\Util\App\Kernel" />
     </php>
 
+    <source>
+        <include>
+            <directory suffix=".php">src</directory>
+        </include>
+    </source>
+
     <testsuites>
         <testsuite name="test">
             <directory>./tests/</directory>
