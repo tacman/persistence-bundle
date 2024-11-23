@@ -1,7 +1,0 @@
-services:
-    Fico7489\PersistenceBundle\Service\PersistenceBundleTest:
-        public: true
-
-    Fico7489\PersistenceBundle\EventListener\DoctrineListener:
-        autowire: true
-        autoconfigure: true
