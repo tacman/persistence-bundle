@@ -50,7 +50,7 @@ class FunctionalTest extends KernelTestCase
         $events = $this->eventsGet(UpdatedEntity::class);
 
         // assert that we received what we want
-        $this->assertEquals(1, count($events));
+        $this->assertCount(1, $events);
         $this->assertEquals(1, $events[0]->getId());
         $this->assertEquals(User::class, $events[0]->getClassName());
 
