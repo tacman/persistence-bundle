@@ -9,6 +9,12 @@ use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
 class PersistenceBundle extends AbstractBundle
 {
+    /**
+     * @param array<string, mixed> $config
+     * @param ContainerConfigurator $container
+     * @param ContainerBuilder $builder
+     * @return void
+     */
     public function loadExtension(array $config, ContainerConfigurator $container, ContainerBuilder $builder): void
     {
         $builder->autowire(DoctrineListener::class)
